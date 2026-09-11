@@ -1,16 +1,51 @@
 [
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Blog",
     "section": "",
-    "text": "About this site"
+    "text": "My first weeks in MDS\n\n\n\n\n\n\n\n\nSep 11, 2026\n\n\nHan Bao\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "my_first",
+    "title": "Han Bao",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+    "text": "I am originally from China. Before joining the MDS program at UBC, I studied International Econimic and Trade and worked on the enterprise data field as a product manager for 7 years. I joined MDS to develop my skills in coding and algorithm. After the program, I hope to become a true data scientist."
+  },
+  {
+    "objectID": "posts/first-weeks/index.html",
+    "href": "posts/first-weeks/index.html",
+    "title": "My first weeks in MDS",
+    "section": "",
+    "text": "Chinese food here is so great"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "I graduated from HUST(Huazhong university of science and technology). After that, I joined a big data company which sold data and data product(API, SDK and so on) to financial institution as a product manager. In the next 6 years, I keen on this field and finally own my own startup."
+  },
+  {
+    "objectID": "about.html#background",
+    "href": "about.html#background",
+    "title": "About",
+    "section": "",
+    "text": "I graduated from HUST(Huazhong university of science and technology). After that, I joined a big data company which sold data and data product(API, SDK and so on) to financial institution as a product manager. In the next 6 years, I keen on this field and finally own my own startup."
+  },
+  {
+    "objectID": "about.html#why-data-science",
+    "href": "about.html#why-data-science",
+    "title": "About",
+    "section": "Why data science",
+    "text": "Why data science\nAs I stay in my field for a quite long time, I hit my glass ceiling. I want to learn deeper, so that I can find more business opportunities in the future."
+  },
+  {
+    "objectID": "about.html#outside-of-data-science",
+    "href": "about.html#outside-of-data-science",
+    "title": "About",
+    "section": "Outside of data science",
+    "text": "Outside of data science\nI love playing DOTA2 and CS2, but I can’t find anyone can play with me here T T.."
   }
 ]

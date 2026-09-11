@@ -1,5 +1,13 @@
 ---
 title: "About"
 ---
+## Background
+  I graduated from HUST(Huazhong university of science and technology). After that, I joined a big data company which sold data and data product(API, SDK and so on) to financial institution as a product manager. In the next 6 years, I keen on this field and finally own my own startup.
+  
+## Why data science
+  As I stay in my field for a quite long time, I hit my glass ceiling. I want to learn deeper, so that I can find more business opportunities in the future.
+  
+## Outside of data science
+  I love playing DOTA2 and CS2, but I can't find anyone can play with me here T T..
 
-About this site
+

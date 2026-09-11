@@ -1,7 +1,7 @@
 ---
-title: "my_first"
+title: "Han Bao"
 ---
+![](images/meEP0cS0.jpg){width=250px}
 
-This is a Quarto website.
+I am originally from China. Before joining the MDS program at UBC, I studied International Econimic and Trade and worked on the enterprise data field as a product manager for 7 years. I joined MDS to develop my skills in coding and algorithm. After the program, I hope to become a true data scientist.
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
