@@ -1,0 +1,44 @@
+---
+title: "Iris petal length"
+author: "Han Bao"
+date: "2026-09-21"
+---
+Data: [iris dataset].
+
+## Load data
+
+```{r}
+
+data <- iris
+head(data)
+```
+
+## Caculate mean of petal length
+
+```{r}
+#| message: false
+
+library(dplyr)
+
+mean_length = data |>
+  group_by(Species) |>
+  summarise(mean_petal_length = mean(Petal.Length))
+
+mean_length
+```
+
+
+## Compare each species' length range
+
+```{r}
+data |>
+  group_by(Species) |>
+  summarise(
+    shortest = min(Petal.Length),
+    longest = max(Petal.Length),
+    avg = mean(Petal.Length)
+  )
+```
+
+## Conclusion
+Virginica has the longest avg petal length(about 5.55),followed by versicolor(4.26), while setosa has the shortest(about 1.46).
