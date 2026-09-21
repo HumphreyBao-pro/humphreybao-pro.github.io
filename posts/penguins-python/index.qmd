@@ -1,0 +1,56 @@
+---
+title: "Comparing penguin body mass"
+author: "Han Bao"
+date: "2026-09-21"
+jupyter: python3
+execute:
+  echo: true
+---
+
+## Dataset
+Data: [Palmer Penguins](https://allisonhorst.github.io/palmerpenguins/),
+Palmer Station Antarctica LTER.
+
+## Load the data
+
+```{python}
+#| label: load-penguins
+
+from palmerpenguins import load_penguins
+
+penguins = load_penguins()
+penguins.head(10)
+```
+
+## Average body mass
+
+Calculate the average for each species.
+
+```{python}
+penguins_clean = penguins.dropna(subset=["body_mass_g"])
+
+mean_mass = penguins_clean.groupby("species")["body_mass_g"].mean()
+mean_mass
+```
+
+## Plot
+
+A bar chart to compare the average body mass.
+
+```{python}
+#| label: fig-penguin-mass
+#| fig-cap: "Average body mass by penguin species."
+
+import matplotlib.pyplot as plt
+
+mean_mass.plot(kind="bar", rot=0)
+plt.xlabel("Species")
+plt.ylabel("Average body mass (g)")
+plt.show()
+```
+
+## Found
+
+Gentoo penguins have the highest average body mass, about 5,076 g.
+Adelie and Chinstrap penguins have similar averages, about 3,701 g
+and 3,733 g.

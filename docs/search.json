@@ -4,7 +4,7 @@
     "href": "blog.html",
     "title": "Blog",
     "section": "",
-    "text": "My first weeks in MDS\n\n\n\n\n\n\n\n\nSep 11, 2026\n\n\nHan Bao\n\n\n\n\n\nNo matching items"
+    "text": "Comparing penguin body mass\n\n\n\n\n\n\n\n\nSep 21, 2026\n\n\nHan Bao\n\n\n\n\n\n\n\n\n\n\n\n\nMy first weeks in MDS\n\n\n\n\n\n\n\n\nSep 11, 2026\n\n\nHan Bao\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "index.html",
@@ -47,5 +47,47 @@
     "title": "About",
     "section": "Outside of data science",
     "text": "Outside of data science\nI love playing DOTA2 and CS2, but I can’t find anyone can play with me here T T.."
+  },
+  {
+    "objectID": "posts/penguins-python/index.html",
+    "href": "posts/penguins-python/index.html",
+    "title": "Comparing penguin body mass",
+    "section": "",
+    "text": "Data: Palmer Penguins, Palmer Station Antarctica LTER."
+  },
+  {
+    "objectID": "posts/penguins-python/index.html#load-the-data",
+    "href": "posts/penguins-python/index.html#load-the-data",
+    "title": "Comparing penguin body mass",
+    "section": "Load the data",
+    "text": "Load the data\n\nfrom palmerpenguins import load_penguins\n\npenguins = load_penguins()\npenguins.head(10)\n\n\n\n\n\n\n\n\nspecies\nisland\nbill_length_mm\nbill_depth_mm\nflipper_length_mm\nbody_mass_g\nsex\nyear\n\n\n\n\n0\nAdelie\nTorgersen\n39.1\n18.7\n181.0\n3750.0\nmale\n2007\n\n\n1\nAdelie\nTorgersen\n39.5\n17.4\n186.0\n3800.0\nfemale\n2007\n\n\n2\nAdelie\nTorgersen\n40.3\n18.0\n195.0\n3250.0\nfemale\n2007\n\n\n3\nAdelie\nTorgersen\nNaN\nNaN\nNaN\nNaN\nNaN\n2007\n\n\n4\nAdelie\nTorgersen\n36.7\n19.3\n193.0\n3450.0\nfemale\n2007\n\n\n5\nAdelie\nTorgersen\n39.3\n20.6\n190.0\n3650.0\nmale\n2007\n\n\n6\nAdelie\nTorgersen\n38.9\n17.8\n181.0\n3625.0\nfemale\n2007\n\n\n7\nAdelie\nTorgersen\n39.2\n19.6\n195.0\n4675.0\nmale\n2007\n\n\n8\nAdelie\nTorgersen\n34.1\n18.1\n193.0\n3475.0\nNaN\n2007\n\n\n9\nAdelie\nTorgersen\n42.0\n20.2\n190.0\n4250.0\nNaN\n2007"
+  },
+  {
+    "objectID": "posts/penguins-python/index.html#average-body-mass",
+    "href": "posts/penguins-python/index.html#average-body-mass",
+    "title": "Comparing penguin body mass",
+    "section": "Average body mass",
+    "text": "Average body mass\nCalculate the average for each species.\n\npenguins_clean = penguins.dropna(subset=[\"body_mass_g\"])\n\nmean_mass = penguins_clean.groupby(\"species\")[\"body_mass_g\"].mean()\nmean_mass\n\nspecies\nAdelie       3700.662252\nChinstrap    3733.088235\nGentoo       5076.016260\nName: body_mass_g, dtype: float64"
+  },
+  {
+    "objectID": "posts/penguins-python/index.html#plot",
+    "href": "posts/penguins-python/index.html#plot",
+    "title": "Comparing penguin body mass",
+    "section": "Plot",
+    "text": "Plot\nA bar chart to compare the average body mass.\n\nimport matplotlib.pyplot as plt\n\nmean_mass.plot(kind=\"bar\", rot=0)\nplt.xlabel(\"Species\")\nplt.ylabel(\"Average body mass (g)\")\nplt.show()\n\n\n\n\n\n\n\nFigure 1: Average body mass by penguin species."
+  },
+  {
+    "objectID": "posts/penguins-python/index.html#found",
+    "href": "posts/penguins-python/index.html#found",
+    "title": "Comparing penguin body mass",
+    "section": "Found",
+    "text": "Found\nGentoo penguins have the highest average body mass, about 5,076 g. Adelie and Chinstrap penguins have similar averages, about 3,701 g and 3,733 g."
+  },
+  {
+    "objectID": "posts/penguins-python/index.html#dataset",
+    "href": "posts/penguins-python/index.html#dataset",
+    "title": "Comparing penguin body mass",
+    "section": "",
+    "text": "Data: Palmer Penguins, Palmer Station Antarctica LTER."
   }
 ]
